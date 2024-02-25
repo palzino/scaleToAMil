@@ -1,2 +1,4 @@
-flask/venv
+API-Programs/flask/venv
+API-Programs/rust/target
+API-Programs/rust/Cargo.lock
 .DS_Store
