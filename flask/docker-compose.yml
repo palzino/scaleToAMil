@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+  web:
+    build: .
+    command: gunicorn -w 4 -b :8000 app:app
+    volumes:
+      - .:/usr/src/app
+    ports:
+      - "8000:8000"
+    environment:
+      - NAME=World
